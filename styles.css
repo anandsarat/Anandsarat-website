@@ -1,0 +1,74 @@
+/* Custom Styles & Çelebi Aviation Blue Design System for Anand Sarat */
+:root {
+    --celebi-navy: #004B87;
+    --celebi-dark: #071c36;
+    --celebi-midnight: #030c18;
+    --celebi-ice: #f0f6fc;
+    --celebi-accent: #0066b2;
+    --executive-gold: #d97706;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #0f172a;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, .font-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 2px;
+}
+
+.hero-bg-pattern {
+    background-color: var(--celebi-dark);
+    background-image: 
+        radial-gradient(circle at 80% 20%, rgba(0, 102, 178, 0.35) 0%, transparent 50%),
+        radial-gradient(circle at 15% 85%, rgba(0, 75, 135, 0.45) 0%, transparent 55%),
+        linear-gradient(135deg, #030c18 0%, #071c36 55%, #004B87 100%);
+}
+
+.subtle-grid {
+    background-size: 36px 36px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.program-card {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+.program-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 75, 135, 0.08), 0 8px 10px -6px rgba(0, 75, 135, 0.04);
+    border-color: #004B87;
+}
+
+.filter-btn.active {
+    background-color: #004B87;
+    color: #ffffff;
+    border-color: #004B87;
+    box-shadow: 0 4px 12px rgba(0, 75, 135, 0.22);
+}
+
+.portrait-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #e2e8f0 0%, #cbd5e1 100%);
+}
+
+#toast {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#toast.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
